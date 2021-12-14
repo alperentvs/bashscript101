@@ -30,6 +30,11 @@
 # <   / kucuk                  / if [[ "$a" < "$b" ]] --> Alfabetik dizilime gore
 # >   / buyuk                  / if [[ "$a" > "$b" ]] --> Alfabetik dizilime gore
 
+
+# ---- AND, OR OPERATORLERİ -----
+# AND --> && (-a)
+# OR  --> || (-o)
+ 
 # Dikkat edilmesi gereken bir diger sey if kullanırken aralarda bosluk birakilmasi gerekmektedir.
 
 
@@ -67,9 +72,19 @@ echo "Deger 9'a esit"
 fi 
 
 # Ornek-5
-ad=alperen
+d=alperen
 
 if [ $ad == "alperen" ]
 then
 echo "Isım Alperen'dir"
+fi
+
+# Ornek-6
+yas=28
+
+if [ "$yas" -gt 18 ] && [ "$yas" -lt 30 ] # if [ "$yas" -gt 18 -a "$yas" -lt 30 ], [[ "$yas" -gt 18 && "$yas" -lt 30 ]] --> ayni seydir
+then
+echo "Gecerli yas"
+else
+echo "Gecersiz yas"
 fi
