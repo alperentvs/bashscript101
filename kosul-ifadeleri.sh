@@ -72,7 +72,7 @@ echo "Deger 9'a esit"
 fi 
 
 # Ornek-5
-d=alperen
+ad=alperen
 
 if [ $ad == "alperen" ]
 then
