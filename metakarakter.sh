@@ -1,4 +1,4 @@
-# #! /bin/bash
+#! /bin/bash
 
 # Meta karakterleri script yazarken sık sık kullanarız. Kısaca bunlara deginecegim:
 
